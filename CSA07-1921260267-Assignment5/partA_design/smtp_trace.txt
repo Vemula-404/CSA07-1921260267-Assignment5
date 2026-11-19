@@ -1,0 +1,17 @@
+S: 220 mail.example.com ESMTP ready
+C: EHLO student.example.com
+S: 250-mail.example.com
+S: 250-8BITMIME
+S: 250 STARTTLS
+C: MAIL FROM:<student@example.com>
+S: 250 OK
+C: RCPT TO:<teacher@example.com>
+S: 250 OK
+C: DATA
+S: 354 Start mail input; end with <CRLF>.<CRLF>
+C: Subject: Homework
+C: Hello teacher...
+C: .
+S: 250 OK: queued as 12345
+C: QUIT
+S: 221 Bye
